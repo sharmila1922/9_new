@@ -1835,7 +1835,6 @@ class ViewPaymentsScreen(Screen):
 
             cursor.execute("select * from payments where service_booking_id = '" + str(service_booking_id) + "'")
             payment = cursor.fetchone()
-            print(payment)
             card_type = payment[1]
             advance_amount = payment[2]
             advance_amount_date = payment[5]
